@@ -10,7 +10,6 @@ class WebClient(object):
         super(WebClient, self).__init__()
 
 
-
     def download_page(arg):
         #connect to the web site
         file=urlopen("http://www.eps.udl.cat/ca/")
@@ -33,3 +32,4 @@ class WebClient(object):
 if __name__=="__main__":
     c = WebClient()
     c.run()
+    print "prova de github desde portatil"
