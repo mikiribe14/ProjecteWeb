@@ -6,6 +6,8 @@ from urllib.request import urlopen
 import bs4 #li dono un fitxer xml i em construeix un arbre
     #HTML es un exemple concret de xml, si està ben fet
 
+    #prova desde portatil ubuntu 16
+
 class WebClient(object):
     """WebClient class"""
     def __init__(self):
