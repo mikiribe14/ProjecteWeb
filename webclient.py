@@ -22,7 +22,7 @@ class WebClient(object):
 
     def search_activities(self,page):
         tree = bs4.BeautifulSoup(page,"lxml")
-        activities = tree.find_all("div","features-links-item")
+        activities = tree.find_all("div","features--item")
         act_list=[]
         for activity in activities:
             title=activity.find("span","flink-title")
@@ -43,4 +43,3 @@ class WebClient(object):
 if __name__=="__main__":
     c = WebClient()
     c.run()
-
