@@ -16,6 +16,9 @@ Including another URLconf
 from django.conf.urls import url
 from django.contrib import admin
 
+import envelopes.views as ev
+
 urlpatterns = [
-    url(r'^admin/', admin.site.urls),
+    url('admin/', admin.site.urls),
+    re_path('^$', ev.mainpage) #^$ significa adreça buida
 ]
